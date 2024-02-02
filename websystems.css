@@ -201,6 +201,16 @@ span{
     height: auto;
     padding-right: 5%;
 }
+.screenshot2{
+    width: 80%;
+    height: auto;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+article{
+    margin: 0px;
+    padding: 0px;
+}
 @media screen and (max-width: 1200px) {
     .content{
         flex-direction: column;
@@ -217,14 +227,13 @@ span{
     }
     @media screen and (max-width: 1600px) {
         .content{
-
             padding-right: 0px;
             }
         .icon{
             width: 300px;
             height: 300px;
-            padding-left: 50px;
-            padding-top: 120px;
+            padding-left: 100px;
+            padding-top: 0px;
         }
         .iconleft{
             margin-left: 0px;
@@ -232,6 +241,12 @@ span{
             height: 300px;
             padding-top: 120px;
 
+        }
+        p{
+            font-size: 15px;
+        }
+        .sec{
+            font-size: 15px;
         }
     }
     
