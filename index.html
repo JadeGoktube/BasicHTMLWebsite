@@ -59,18 +59,16 @@
 		</div>
             </div>
     <script>
-        function cleanInput() {
-            const userInput = document.getElementById('searchInput').value;
-
-            // Set the input as innerHTML (vulnerable)
-            document.getElementById('searchResults').innerHTML = userInput;
-
-            // Sanitize input using DOMPurify
-            const cleanInput = DOMPurify.sanitize(document.getElementById('searchResults').innerHTML);
-
-            // Display the sanitized input
-            document.getElementById('resultBox').textContent = "You searched: " + cleanInput;
-        }
+	function cleanInput() {
+	    const userInput = document.getElementById('searchInput').value;
+	
+	    // Sanitize input using DOMPurify
+	    const cleanInput = DOMPurify.sanitize(userInput);
+	
+	    // Display the sanitized input
+	    const resultBox = document.getElementById('resultBox');
+	    resultBox.textContent = "You searched: " + cleanInput;
+	}
     </script>  
 
             
