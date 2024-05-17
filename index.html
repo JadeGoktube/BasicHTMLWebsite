@@ -15,7 +15,6 @@
                 <li> <a href="past.html">Past</a>
                 <li><a href="future.html">Future</a>
                 <li><a href="comments.html">Comments</a>
-		<li></li>
             </ul>
 
             <div class="main">
@@ -46,8 +45,10 @@
             		<input type="text" id="searchInput" placeholder="Search...">
             		<button onclick="cleanAndDisplay()">Search</button>
            		 <div id="searchResults"></div>
-			 <div id="resultBox"></div>
-        	</div>
+			<div id="resultBox">
+           			 <label id="searchLabel"></label>
+			</div>        	
+		</div>
             </div>
     <script>
         function cleanInput() {
