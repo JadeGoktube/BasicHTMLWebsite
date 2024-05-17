@@ -55,7 +55,6 @@
             		<button onclick="cleanAndDisplay()">Search</button>
            		 <div id="searchResults"></div>
 			<div id="resultBox">
-           			 <label id="searchLabel"></label>
 			</div>        	
 		</div>
             </div>
@@ -70,7 +69,7 @@
             const cleanInput = DOMPurify.sanitize(document.getElementById('searchResults').innerHTML);
 
             // Display the sanitized input
-            document.getElementById('searchLabel').textContent = "You searched: " + cleanInput;
+            document.getElementById('resultBox').textContent = "You searched: " + cleanInput;
         }
     </script>  
 
